@@ -1,0 +1,21 @@
+@import '@/styles/variable.scss';
+
+.description-wrapper{
+    margin-top: 72px;
+
+    .description-title{
+        font-size: 60px;
+        line-height: 72px;
+        color:$gold-black;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+    .description{
+        max-width: 710px;
+        line-height: 40px;
+        font-size: 22px;
+        color:$gold-black;
+        font-weight: 400;
+
+    }
+}
