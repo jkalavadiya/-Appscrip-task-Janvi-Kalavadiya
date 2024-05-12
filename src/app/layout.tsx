@@ -6,8 +6,7 @@ import './globals.scss';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "appscrip-task",
-  
+  title: "Online Shopping for Women, Men, Kids Fashion & Lifestyle ",
 description:"Online Shopping Site for Fashion & Lifestyle in India. India's Fashion Expert brings you a variety of footwear, Clothing, Accessories and lifestyle products for women & men. Best Online Fashion Store *COD *Easy returns and exchanges.",
 };
 
