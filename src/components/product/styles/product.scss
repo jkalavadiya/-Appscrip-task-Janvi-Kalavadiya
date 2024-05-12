@@ -1,0 +1,121 @@
+@import '@/styles/variable.scss';
+.product-details-container{
+    padding: 30px 60px;
+    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .product-details-wrapper{
+        height: 300px;
+        max-width: 100%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
+        padding: 30px;
+    }
+
+    .wishlist{
+        path{
+            fill: $light-red-color;
+            stroke:$light-red-color;
+        }
+    }
+    .product--title{
+        max-width: 260px;
+    }
+    .title{
+        color: #888792;
+        gap:20px;
+    }
+
+    .filter-wrapper{
+        width: 300px;
+    }
+}
+
+.product-header-wrapper{
+    margin-top: 70px;
+    padding: 24px 60px;
+border-top: 1px solid #E5E5E5;
+border-bottom: 1px solid #E5E5E5;
+
+.total-item{
+    margin-right: 80px;
+}
+
+.filter-btn{
+    font-size: 16px;
+    line-height: 40px;
+    color: #888792;
+    ;
+}
+}
+
+.product-info{
+    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+
+
+//responsive
+
+@media screen and (max-width: 1200px) {
+    .product-details-container{
+        grid-template-columns:repeat(3, 1fr)
+    }
+    .product-info{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 991px) {
+    .product-details-container{
+        padding: 30px 20px;
+        grid-template-columns:repeat(2, 1fr)
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .product-header-wrapper{
+       padding: 10px 25px;
+
+       .total-item,
+       .arrow-icon{
+       display: none;
+       }
+
+       .filter-btn{
+        font-size: 14px;
+        line-height: 30px;
+       }
+       .dropdown-list{
+        width: 50%;
+        justify-content: center;
+       }
+       .filter-wrapper{
+        justify-content: center;
+        width:50%;
+       }
+    }
+    .product-info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    
+}
+
+@media screen and (max-width: 650px) { 
+
+    .product-details-container{
+        grid-template-columns:repeat(1, 1fr);
+        padding:30px;
+    }
+    .details-wrapper{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}

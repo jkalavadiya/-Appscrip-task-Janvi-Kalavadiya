@@ -24,3 +24,55 @@
         gap: 8px;
     }
 }
+
+//resposnive
+@media screen and (max-width: 768px) { 
+
+   .footer-wrapper{
+    padding: 16px;
+    .footer-description{
+        flex-direction: column;
+
+        .footer{
+            p{
+                display: none;
+            }
+            .details{
+                display: block;
+            }
+            .input-wrapper{
+                margin-top: 16px;
+                display: flex;
+            }
+        }
+        .horizontal-line{
+            display: block;
+        }
+        .contact-info{
+            width: 100%;
+        }
+        .currency-text{
+            display: none;
+        }
+    }
+    .metta-description-wrapper{
+        display: none;
+    }
+    .quick-wrapper{
+        display: none;
+    }
+    .social-wrapper{
+        margin-top: 15px;
+
+        .footer-responsive{
+            display: block;
+        }
+    }
+    .social{
+        display: none;
+    }
+    .res-text,.responsive-icon-wrapper{
+        display: block;
+        }
+   }
+}

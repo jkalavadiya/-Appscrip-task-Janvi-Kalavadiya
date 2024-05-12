@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import logo from '../../../public/images/Vector.png'
-import { ProfileIcon, SearchIcon, ShoppingIcon, WishListIcon } from '@/shared/icons/icon';
+import { MenuIcon, ProfileIcon, SearchIcon, ShoppingIcon, WishListIcon } from '@/shared/icons/icon';
 import { NAVBAR_MENU } from '@/shared/constants/constants';
 import './header.scss';
 
@@ -23,18 +23,21 @@ const Header: React.FC = () => {
 		},
 		{
 			name:'profile',
-			svgIcon: <ProfileIcon/>
+			svgIcon: <ProfileIcon className='profile-icon	'/>
 		}
 	]
 	return <>
 			<div className='header-container'>
 	<div className='header-wrapper flex justify-content--between align-items--center'>
-	<div className='width--33'>
-		<Image src={logo} alt={'vector-img'}/>
+	<div className='width--33 flex'>
+		<MenuIcon className='menu-icon mr--10 hide' />
+		<Image src={logo} alt={'vector-img'} className='logo-image'/>
 	</div>
 
+	
+
 	<div className='width--33 flex justify-content--center'>
-		<h1 className='font-size--36 font--extra-bold'>LOGO</h1>
+		<h1 className='logo-title font-size--36 font--extra-bold'>LOGO</h1>
 	</div>
 	<div className='icons-wrapper flex width--33 justify-content--end'>
 		{
@@ -52,7 +55,7 @@ const Header: React.FC = () => {
 		{
 			NAVBAR_MENU.map(({name,path},index)=>{
 				return <>
-				<p key={index}	className={'header-link text--uppercase font--bold font-size--xxl line-height--24'}>{name}</p>
+				<p key={index}	className={'header-link text--uppercase font--bold font-size--xxl line-height--24 cursor--pointer'}>{name}</p>
 				</>
 			})
 		}

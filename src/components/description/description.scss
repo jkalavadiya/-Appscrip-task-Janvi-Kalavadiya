@@ -19,3 +19,19 @@
 
     }
 }
+
+//resposnive
+@media screen and (max-width: 768px) { 
+
+    .description-wrapper{
+        .description-title{
+            font-size: 24px;
+            line-height: 28px;
+        }
+        .description{
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    
+ }

@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-select": "^5.0.1",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-multi-select-component": "^4.3.4",
+    "react-select": "^5.8.0",
     "sass": "^1.77.1"
   },
   "devDependencies": {
